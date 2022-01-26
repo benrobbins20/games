@@ -55,7 +55,10 @@ class Golfbag:
       print('Distance remaining: {} yards'.format(distance_remaining))
       club = input('Choose a club from the following.\n\n{}\n:'.format(self.club_distance()))
       club = club.lower()
-
+      while club not in self.club_distance():
+        print(f'{fc.red}Club not found{fc.end}')
+        club = input('Choose a club from the following.\n\n{}\n:'.format(self.club_distance()))
+        club = club.lower()
       club_range = list(self.club_distance()[club])
       hit = random.randint(club_range[0],club_range[-1])
       print('Your shot went {} yards.'.format(hit))

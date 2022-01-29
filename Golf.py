@@ -155,6 +155,20 @@ def hole_list():
   hole_17 = Hole(random.randint(3,5))
   hole_18 = Hole(random.randint(3,5))
   return [hole_1,hole_2,hole_3,hole_4,hole_5,hole_6,hole_7,hole_8,hole_9,hole_10,hole_11,hole_12,hole_13,hole_14,hole_15,hole_16,hole_17,hole_18]
+
+print(
+  r'''
+ __     _____       _  __          __     
+ \ \   / ____|     | |/ _|         \ \    
+  \ \ | |  __  ___ | | |_ _ __  _   \ \   
+   \ \| | |_ |/ _ \| |  _| '_ \| | | \ \  
+  _ \ \ |__| | (_) | | |_| |_) | |_| |\ \ 
+ (_) \_\_____|\___/|_|_(_) .__/ \__, | \_\
+                         | |     __| /   
+                         |_|    |___/     
+                         
+''')
+
 c_1 = hole_list()
 bag_1 = Golfbag('lob wedge','sand wedge','gap wedge','pitching wedge','9 iron','8 iron','7 iron','6 iron','5 iron','4 iron','3 iron','3 wood','driver')
 course_1 = Course(bag_1,c_1)
